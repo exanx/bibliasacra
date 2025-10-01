@@ -1,4 +1,4 @@
-# <img src="./Sancta.svg" width="150">
+# <img src="./Sancta.svg" width="250">
 # <img src="./favicon.svg" width="30"> Biblia Sacra: Modern Bible Reader
 
 > A fast, modern, and personalized Bible reading Progressive Web App (PWA) designed for deep study. Read classic translations, generate shareable quotes, and utilize cutting-edge AI tools powered by Google's Gemini.
