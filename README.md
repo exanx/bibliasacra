@@ -69,5 +69,3 @@ For users who prefer a standalone application, a beta APK is available via GitHu
 *   **AI Engine:** Google Gemini API
 *   **Offline Support:** Progressive Web App (PWA) Service Workers
 *   **Utility:** `marked.js` (Markdown parsing), HTML Canvas (Quote Generation)
-
-> Created by **[EXANXC](https://x.com/exanxc)**.
