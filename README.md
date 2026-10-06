@@ -1,10 +1,5 @@
 # <center><img src="./Sancta.svg" width="250"></center>
 
-## A Modern Bible Reader
-Here is a detailed, publication-ready description for your GitHub repository (**`README.md`**), tailored to highlight all the features, tech stack, and sync architecture built into your web application:
-
----
-
 # 📖 Biblia Sacra (Sancta Biblia)
 
 > A modern, elegant, fully customizable, and distraction-free Catholic Web Application for reading and meditating on Sacred Scripture.
