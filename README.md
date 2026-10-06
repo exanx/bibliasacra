@@ -1,4 +1,4 @@
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=rocket)]([https://exanx.github.io/bibliasacra/](https://bibliasacra.web.app/))
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=rocket)](https://bibliasacra.web.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 # <center><img src="./Sancta.svg" width="250"></center>
