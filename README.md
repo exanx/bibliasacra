@@ -1,71 +1,144 @@
 # <center><img src="./Sancta.svg" width="250"></center>
+
 ## A Modern Bible Reader
-
-> A fast, modern, and personalized Bible reading Progressive Web App (PWA) designed for deep study. Read classic translations, generate shareable quotes, and utilize cutting-edge AI tools powered by Google's Gemini.
-
-This application is built as a highly responsive PWA, ensuring a seamless experience across desktop, tablet, and mobile devices.
+Here is a detailed, publication-ready description for your GitHub repository (**`README.md`**), tailored to highlight all the features, tech stack, and sync architecture built into your web application:
 
 ---
 
-## ✨ Key Features
+# 📖 Biblia Sacra (Sancta Biblia)
 
-### 📖 Enhanced Reading & Translations
+> A modern, elegant, fully customizable, and distraction-free Catholic Web Application for reading and meditating on Sacred Scripture.
 
-*   **Multi-Version Support:** Access classic translations including Douay-Rheims Bible (DRB), Catholic Public Domain Version (CPDV), World English Bible Catholic Edition (WEBC), and King James Version (KJVA).
-*   **Custom AI Translation (Beta):** Use your Gemini API key to dynamically fetch passages from virtually any recognized translation *(e.g., NIV, NRSVCE, ESV)* directly into the app.
-*   **Personalized Typography:** Adjust font size and select between various reading fonts (Tinos, Lora, Merriweather, etc.) and toggle between Light/Dark themes.
-
-### 🧠 Intelligent Study Tools (Gemini Powered)
-
-Integrate your personal Gemini API key to unlock powerful AI functionality:
-*   **AI Search:** Search the entire Bible for topics, concepts, or themes and get direct verse recommendations.
-*   **Chapter Summaries:** Instantly generate concise summaries of any chapter.
-*   **Theological Explanations:** Get in-depth explanations of chapter significance and context.
-
-### ✍️ Notes and Personalization
-
-*   **Highlighting & Note-Taking:** Select a range of verses to highlight in five different colors. Add private notes (with Markdown support) to your highlights.
-*   **Categorization:** Organize your highlights and notes into custom categories (e.g., "Prayer," "Doctrine," "Sermon Prep").
-*   **Cloud Synchronization:** Securely sync all your highlights, notes, and settings across devices using Firebase Authentication (Google or Email login).
-*   **Quote Maker:** Generate and download beautiful, customizable image quotes of single or multiple verses, ready to share on social media.
+**Biblia Sacra** is built with modern Web APIs, lightweight front-end tech, and a real-time cloud sync engine to deliver a rich, app-like reading experience without heavy framework bloat.
 
 ---
 
-## 📸 Screenshots
+## ✨ Features
 
-| Desktop Reading View | Desktop Options & Highlighting |
-| :---: | :---: |
-| <img src="./ss-pc1.jpg" alt="Screenshot of the main reading interface with book selection and chapter content." width="100%"> | <img src="./ss-pc2.jpg" alt="Screenshot showing the desktop options menu and a verse highlighting popup." width="100%"> |
+### 📜 Comprehensive Biblical Texts & Custom Translations
 
-| Mobile Chapter View | Mobile Menu & Controls |
-| :---: | :---: |
-| <img src="./ss-mobile.svg" alt="Mobile screenshot showing the floating menu and chapter controls." width="100%"> | <img src="./ss-mobile.jpg" alt="Mobile screenshot showing a chapter reading view." width="100%"> |
+* **73-Book Catholic Canon**: Built-in support for standard and Deuterocanonical books (e.g., Tobit, Judith, 1 & 2 Maccabees, Wisdom, Sirach, Baruch).
+* **Multiple Built-in Translations**:
+* *Douay-Rheims Bible (DRB)*
+* *Catholic Public Domain Version (CPDV)*
+* *World English Bible: Catholic Edition (WEBC)*
+* *King James Version with Deuterocanon (KJV/D)*
+
+
+* **Custom Bible Support**: Add external JSON-formatted Bibles dynamically by providing a remote endpoint base URL.
+
+### 🎨 Deep Customization & Typography
+
+* **Font Family Selection**: Switch between high-quality Sans-Serif and Serif fonts (e.g., *Inter*, *Roboto*, *Lora*, *Merriweather*, *Crimson Pro*, *Playfair Display*).
+* **Google Fonts Integration**: Add any custom Google Font dynamically by entering its name.
+* **Granular Typography Control**: Adjust base font size, line spacing ratio, font weight, and reader content container width.
+* **Appearance & Themes**:
+* Light, Dark, OLED Black, Sepia, Parchment, Gruvbox, Nord, Dracula, Rosewater, Mocha, and Navy presets.
+* Custom background and text color pickers with real-time accent color customization.
+
+
+
+### ☁️ Dual Engine: Local-First Storage & Cloud Sync
+
+* **Offline First**: Full offline support powered by IndexedDB (`SanctaBibliaDB`) and custom Service Workers (`sw.js`).
+* **Firebase Cloud Sync**: Dual-directional background synchronization for settings, bookmarks, reading history, and highlights across devices.
+* **Automated Data Migration**: Handles legacy data schema shifts and array-to-object conversions gracefully.
+* **Import / Export Backup**: Native `.json` file backup and manual import options.
+
+### ✍️ Highlighting, Notes & Categorization
+
+* **Multi-Color Verse Highlighting**: Highlight verses in Yellow, Green, Blue, Pink, or Purple.
+* **Markdown Notes**: Attach markdown-formatted personal notes directly to highlighted passages.
+* **Custom Categories/Tags**: Organize highlights into custom user-created categories.
+* **Centralized Highlights Hub**: Modal view with search, tag filters, note editor, and single-click reference navigation.
+
+### 📸 Verse Quote Generator
+
+* **Canvas Export**: Generate high-resolution shareable quote images ($1200\times1600\text{ px}$) rendered in real-time.
+* **Background Customization**: Choose solid background colors or search high-quality background images directly via **Pexels API**.
+* **Smart Text Layout**: Automatic text-wrapping and responsive sizing logic for clean composition.
+
+### 🔍 Reference Tools & Selection Tooltip
+
+* **Dictionary & Wikipedia Integration**: Highlight or query words in the text to lookup definitions using the free Dictionary API or Wikipedia summary summaries.
+* **Text Selection Tooltip**: Instant popup triggered on verse selection for fast lookup.
+* **Deep Links & Quick Actions**: Copy or share verses natively with standardized citations.
 
 ---
 
-## ⬇️ Access the Application
+## 🛠️ Tech Stack
 
-### 1. Web / PWA (Recommended)
+* **Front-end**: Pure Native JavaScript (ES6+), HTML5, Tailwind CSS with Typography plugin, IndexedDB API.
+* **Parser / Rendering**: [Marked.js](https://marked.js.org/) for Markdown processing.
+* **Backend & Auth**: Firebase Auth (Google Sign-In & Email/Password) and Firestore Database.
+* **PWA & Offline Services**: Service Workers for progressive web app caching and installability.
+* **Third-Party APIs**:
+* Pexels API (Image search for quote generation)
+* Free Dictionary API & Wikipedia REST API (Reference tool)
+* Remote JSON endpoints for Bible chapter payloads
 
-Access the live application directly in your browser. Install it as a Progressive Web App (PWA) for a lightning-fast, native experience on any device.
 
-🔗 **[Go to Biblia Sacra](https://bibliasacra.web.app)**
-
-### 2. Android Beta (APK)
-
-For users who prefer a standalone application, a beta APK is available via GitHub Releases.
-
-➡️ **[Download the latest APK on the Releases Page](https://github.com/YourUsername/YourRepoName/releases)**
-
-***Note:*** *AI features (Search, Summarize, Custom Translations) require you to obtain and enter your own free* **Google Gemini API Key** *within the app settings.*
 
 ---
 
-## 💻 Technology Stack
+## 📂 Project Structure
 
-*   **Frontend:** Vanilla JavaScript, HTML5
-*   **Styling:** Tailwind CSS (Highly customizable and responsive)
-*   **Authentication & Data:** Google Firebase (Auth, Firestore)
-*   **AI Engine:** Google Gemini API
-*   **Offline Support:** Progressive Web App (PWA) Service Workers
-*   **Utility:** `marked.js` (Markdown parsing), HTML Canvas (Quote Generation)
+```
+├── index.html        # Main DOM layout, modals, templates, and Firebase module initialization
+├── app.js            # Core application state, IndexedDB manager, cloud sync engine, and event handlers
+├── sw.js             # Service worker for offline asset caching
+├── manifest.json     # Web app manifest for PWA installation
+└── favicon.svg       # Application vector icon
+
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+
+To run locally, you only need a standard static web server (such as Live Server, Nginx, or Python's HTTP server).
+
+### 2. Local Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+
+# Navigate into the project folder
+cd your-repo-name
+
+# Start a simple HTTP server (Python example)
+python -m http.server 8000
+
+```
+
+Open your browser and navigate to `http://localhost:8000`.
+
+### 3. Firebase Configuration
+
+The application is pre-configured with Firebase SDKs. If you wish to host your own Firestore database:
+
+1. Create a Firebase project in the [Firebase Console](https://console.firebase.google.com/).
+2. Enable **Authentication** (Google & Email/Password providers).
+3. Enable **Firestore Database**.
+4. Update the `firebaseConfig` object inside `index.html`:
+
+```javascript
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
