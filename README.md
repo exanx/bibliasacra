@@ -9,7 +9,7 @@
 
 **Biblia Sacra** is built with modern Web APIs, lightweight front-end tech, and a real-time cloud sync engine to deliver a rich, app-like reading experience without heavy framework bloat.
 
-![Biblia Sacra main reading area]([bibliasacra.webp (1280×613)](https://raw.githubusercontent.com/exanx/bibliasacra/refs/heads/main/bibliasacra.webp))
+![Biblia Sacra main reading area](https://raw.githubusercontent.com/exanx/bibliasacra/refs/heads/main/bibliasacra.webp)
 ---
 
 ## ✨ Features
