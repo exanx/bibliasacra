@@ -9,6 +9,7 @@
 
 **Biblia Sacra** is built with modern Web APIs, lightweight front-end tech, and a real-time cloud sync engine to deliver a rich, app-like reading experience without heavy framework bloat.
 
+![Simplex OS Desktop Screenshot showing multiple apps open](https://raw.githubusercontent.com/exanx/SimplexOS/refs/heads/main/screenshots/Screenshot_9-7-2025_203957_exanx.github.io.jpeg)
 ---
 
 ## ✨ Features
