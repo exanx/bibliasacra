@@ -1,6 +1,6 @@
 # <center><img src="./Sancta.svg" width="250"></center>
 
-# 📖 Biblia Sacra (Sancta Biblia)
+# 📖 Biblia Sacra
 
 > A modern, elegant, fully customizable, and distraction-free Catholic Web Application for reading and meditating on Sacred Scripture.
 
